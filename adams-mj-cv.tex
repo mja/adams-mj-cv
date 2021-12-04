@@ -1,0 +1,86 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage{adjustbox}
+\usepackage[style=apa,sorting=ydnt,backend=biber,uniquename=false]{biblatex}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{tikz}
+\addbibresource{pure.bib}
+\DeclareLanguageMapping{american}{american-apa}
+\renewcommand{\bibitemsep}{1.5\itemsep}
+\setcounter{biburlnumpenalty}{100}
+\inputencoding{utf8}
+\widowpenalty=10000
+\clubpenalty=10000
+
+\begin{document}
+
+\noindent{\LARGE{\bfseries{Mark James Adams}}}
+
+\noindent{\rule{\textwidth}{1pt}} \\
+
+\noindent{\adjustbox{valign=t}{\begin{minipage}{0.6\textwidth}
+  The University of Edinburgh \\
+  Division of Psychiatry \\
+  Kennedy Tower \\
+  Royal Edinburgh Hospital \\
+  Edinburgh EH10 5HF \\
+  United Kingdom
+\end{minipage}}}
+\adjustbox{valign=t}{\begin{minipage}{.395\textwidth}
+\flushright
+  \begin{tabular}{ll}
+	Phone: & +44 131 537 6288 \\
+	Mobile: & +44 744 698 9339 \\
+	Email: & mark.adams@ed.ac.uk \\
+  \end{tabular}
+\end{minipage}}
+
+\section*{Positions Held}
+
+\begin{tabular}{p{3cm}p{12cm}}
+2021-- & Senior Research Fellow, Division of Psychiatry, Centre for Clinical Brain Sciences, University of Edinburgh \\ \\
+
+2017--2021 & Data Scientist, Division of Psychiatry, Centre for Clinical Brain Sciences, University of Edinburgh \\ \\
+
+2006--2007 & Laboratory Technician, Drosophila Genetic Resource Center, Kyoto Institute of Technology
+
+\end{tabular}
+
+\section*{Education \& Training}
+
+\begin{tabular}{p{3cm}p{12cm}}
+2015--2017 & Post-doctoral Research Fellow, Division of Psychiatry, Centre for Clinical Brain Sciences, University of Edinburgh \\ \\
+
+2012--2015 & Post-doctoral Research Associate, Department of Animal and Plant Sciences, University of Sheffield \\ \\
+
+2008--2012 & PhD Psychology, University of Edinburgh \\ \\
+
+2007--2008 & MSc Quantitative Genetics \& Genome Analysis, University of Edinburgh \\ \\
+
+1999–2003 & AB Theoretical Evolutionary Biology, Cornell University
+
+\end{tabular}
+
+
+\section*{Output}
+\subsection*{As Lead Author}
+
+\nocite{*}
+
+\setlength\bibhang{0pt}
+
+\printbibliography[type=article,keyword=lead,heading=none]
+
+\subsection*{As Main Author}
+
+\printbibliography[type=article,keyword=main,heading=none]
+
+\subsection*{As Contributing Author}
+
+\printbibliography[type=article,keyword=contrib,heading=none]
+
+\end{document}
